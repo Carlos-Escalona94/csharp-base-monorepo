@@ -1,0 +1,18 @@
+https://nevra.medium.com/setting-up-a-full-stack-web-application-using-nx-workspace-4b035bb63a80
+
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+
+pnpm install -g create-nx-workspace@latest
+
+create-nx-workspace
+
+integrated => apps
+
+pnpm install -D @nx-dotnet/core
+
+.
+.
+.
+
+nx g @nx-dotnet/core:app dummy-app
+nx g @nx-dotnet/core:library dummy-lib
