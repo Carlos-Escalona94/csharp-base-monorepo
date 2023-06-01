@@ -14,5 +14,25 @@ pnpm install -D @nx-dotnet/core
 .
 .
 
+nx run-many --target=build
+
+nx affected:build
+
+nx affected:build --base=origin/dev~1 --head=origin/dev
+
+nx run [projectName]:lint --fix
+
+nx g rm [projectName]
+dotnet remove [projectname] package [packagename] and editing .nx-dotnet.rc.json ??
+
 nx g @nx-dotnet/core:app dummy-app
 nx g @nx-dotnet/core:library dummy-lib
+
+nx g @nx-dotnet/core:project-reference tts-processor tts
+
+nx g @nx-dotnet/core:nuget-reference [projectname] --packageName=[packageName] --version=[0202]
+
+nx g @nx-dotnet/core:move --projectName=full-app-entry1 --destination=full-app/entry1
+
+
+
